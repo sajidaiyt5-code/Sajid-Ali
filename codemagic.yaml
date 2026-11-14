@@ -8,6 +8,14 @@ workflows:
     scripts:
       - name: Build Debug APK
         script: |
-          ./gradlew assembleDebug
+          ls -la
+          chmod +x gradlew || true
+          if [ -f ./gradlew ]; then
+            ./gradlew assembleDebug
+          else
+            gradle wrapper
+            chmod +x gradlew
+            ./gradlew assembleDebug
+          fi
     artifacts:
       - app/build/outputs/apk/debug/*.apk

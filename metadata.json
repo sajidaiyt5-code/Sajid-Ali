@@ -1,0 +1,6 @@
+{
+  "name": "UK Virtual Phone",
+  "description": "A realistic United Kingdom virtual smartphone experience with UK regional settings, virtual UK city location management, built-in Android tools, network telemetry, and privacy controls.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
